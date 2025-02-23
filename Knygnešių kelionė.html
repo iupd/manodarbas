@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knygnešių kelionė</title>
+    <style>
+        .container-box {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .image-container {
+            position: relative;
+            width: 600px;  
+            height: 400px;  
+            background: url('lithuania-map-0.jpg') no-repeat center center/cover;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-button {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            width: 15px;  
+            height: 15px;
+            border: none;
+            background-color: #00ff08;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-button:hover {
+            background-color: #e50000;
+        }
+
+        .image-button.alytus {
+            top: 80%;   
+            left: 53%;
+        }
+
+        .image-button.vilnius {
+            top: 25%;   
+            left: 25%;
+
+            background-color: #3b108c;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.jpg" title="Knygnešių pėdomis">
+        </a>
+    </header>
+    <hr>
+    <nav>
+        <table cellspacing="5" cellpadding="5">
+            <tr>
+                <td><a href="index.html">Namai</a></td>
+                <td><a href="Laiko juosta.html">Laiko juosta</a></td>
+                <td><a href="Knygnešių kelionė.html">Knygnešių kelionė</a></td>
+                <td><a href="Knygnešiai.html">Knygnešiai</a></td>
+                <td><a href="Iššifruok.html">Iššifruok!</a></td>
+                <td><a href="Suzinok daugiau.html">Sužinok daugiau</a></td>
+            </tr>
+        </table>
+        <hr>
+    </nav>
+
+    <div class="container-box">
+        <div class="image-container">
+            <button class="image-button alytus">1</button>
+            <button class="image-button vilnius">2</button>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head><title>Iššifruok!</title></head>
+<body>
+<header>
+<a href="index.html">
+<img src="logo.jpg" title="Knygnešių pėdomis">
+</a>
+</header>
+<hr>
+<nav>
+<table cellspacing="5" cellpadding="5">
+<tr>
+<td><a href="index.html">Namai</a></td>
+<td><a href="Laiko juosta.html">Laiko juosta</a></td>
+<td><a href="Knygnešių kelionė.html">Knygnešių kelionė</a></td>
+<td><a href="Knygnešiai.html">Knygnešiai</a></td>
+<td><a href="Iššifruok.html">Iššifruok!</a></td>
+<td><a href="Suzinok daugiau.html">Sužinok daugiau</a></td>
+</tr>
+</table>
+</nav>
+<hr>
+ <p>Na, o dabar, laikas linksmesnei užduočiai! Iššifruokite žodį ir sužinokite, kokį charakterio bruožą turėjo visi knygnešiai! Sėkmės!</p>
+        <div class="container">
+            <div class="text">
+        <div class="form-container">
+            <p><strong>Koks tavo atsakymas?</strong></p>
+            <form>
+                <input type="text" name="answer" placeholder="Įveskite atsakymą" pattern="[Dd]idvyriškumas" required>
+                <br>
+                <button type="submit">Pasitikrink</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="images">
+        <img src="img/lentele.jpg" alt="Šifravimo lentelė">
+        <br>
+        <img src="img/zodis.jpg" alt="Šifruotas žodis">
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #d3d3d3;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+    .container {
+        justify-content: center;
+        align-items: center;
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+    }
+    .text {
+        flex: 1;
+        text-align: left;
+        padding-right: 20px;
+    }
+    .images {
+        text-align: center;
+    }
+    .form-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+    input {
+        padding: 10px;
+        width: 60%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        margin-top: 10px;
+        padding: 12px 20px;
+        background-color: #d3d3d3;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #e57373;
+    }
+</style>
+
+
