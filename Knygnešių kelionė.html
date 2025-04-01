@@ -1,24 +1,31 @@
 <!DOCTYPE html>
+<html lang="lt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knygnešių kelionė</title>
+
     <style>
-        .container-box {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
+            padding: 0;
+            background-color: #d3d3d3 ;
         }
 
         .image-container {
             position: relative;
-            width: 600px;  
-            height: 400px;  
-            background: url('lithuania-map-0.jpg') no-repeat center center/cover;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            display: block;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
@@ -26,32 +33,125 @@
         .image-button {
             position: absolute;
             transform: translate(-50%, -50%);
-            width: 15px;  
-            height: 15px;
+            width: 25px;
+            height: 25px;
             border: none;
-            background-color: #00ff08;
+            background-color: #7cfc00;
             cursor: pointer;
-            transition: background 0.3s ease-in-out;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-weight: bold;
+            color: black;
         }
 
         .image-button:hover {
-            background-color: #e50000;
+            background-color: #f08080;
         }
 
         .image-button.alytus {
-            top: 80%;   
-            left: 53%;
+            top: 51%;
+            left: 27%;
         }
 
         .image-button.vilnius {
-            top: 25%;   
-            left: 25%;
+            top: 44%;
+            left: 29%;
+        }
 
-            background-color: #3b108c;
+        .image-button.taurage {
+            top: 24%;
+            left: 42%;
+        }
+
+        .image-button.siauliai {
+            top: 28%;
+            left: 57%;
+        }
+
+        .image-button.kaunas {
+            top: 18%;
+            left: 57%;
+        }
+
+        .image-button.klaipeda {
+            top: 21%;
+            left: 74%;
+        }
+
+        .image-button.uzpaliai {
+            top: 37%;
+            left: 80%;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .popup a {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: #f08080;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .popup a:hover {
+            background-color: #ff4040;
+        }
+
+        #popupAlytus:target,
+        #popupVilnius:target,
+        #popupTaurage:target,
+        #popupSiauliai:target {
+            display: flex;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #f08080;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .nav-btn:hover {
+            background-color: #90ee90;
+            transform: scale(1.05);
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            padding: 5px;
         }
     </style>
 </head>
@@ -59,28 +159,132 @@
 <body>
     <header>
         <a href="index.html">
-            <img src="logo.jpg" title="Knygnešių pėdomis">
+            <img src="img/logo5.jpg" title="Knygnešių pėdomis">
         </a>
     </header>
+
     <hr>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            background-color: #d3d3d3;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #f08080;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .nav-btn:hover {
+            background-color: #90ee90;
+            transform: scale(1.05);
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
     <nav>
         <table cellspacing="5" cellpadding="5">
             <tr>
-                <td><a href="index.html">Namai</a></td>
-                <td><a href="Laiko juosta.html">Laiko juosta</a></td>
-                <td><a href="Knygnešių kelionė.html">Knygnešių kelionė</a></td>
-                <td><a href="Knygnešiai.html">Knygnešiai</a></td>
-                <td><a href="Iššifruok.html">Iššifruok!</a></td>
-                <td><a href="Suzinok daugiau.html">Sužinok daugiau</a></td>
+                <td><a href="index.html" class="nav-btn">Namai</a></td>
+                <td><a href="Laiko juosta.html" class="nav-btn">Laiko juosta</a></td>
+                <td><a href="Knygnešių kelionė.html" class="nav-btn">Knygnešių kelionė</a></td>
+                <td><a href="Knygnešiai.html" class="nav-btn">Knygnešiai</a></td>
+                <td><a href="Iššifruok.html" class="nav-btn">Iššifruok!</a></td>
+                <td><a href="Suzinok daugiau.html" class="nav-btn">Sužinok daugiau</a></td>
             </tr>
         </table>
-        <hr>
     </nav>
 
-    <div class="container-box">
-        <div class="image-container">
-            <button class="image-button alytus">1</button>
-            <button class="image-button vilnius">2</button>
+    <hr>
+    <p> Dabar jūs matote kokiais keliais knygnešiai nešė knygas. Galite pamatyti kelis populiariausius kelius. Vieną iš
+        jų galite išnagrinėti giliau. Paspauskite ant skaičiuko ir galėsite perskaityti šiek tiek daugiau informacijos
+        apie tą vietą.</p>
+    <div class="image-container">
+        <img src="https://opiqlt.blob.core.windows.net/kitcontent/f9e33b0c-4c77-4cc7-956a-79e60b8f937e/9a3e667b-5c17-4364-acce-98d04918b71a/8d3cf5af-323c-4a4b-8dd9-0e06d27e8e9e_m.jpg"
+            class="image">
+
+
+        <a href="#popupAlytus" class="image-button alytus">1</a>
+
+        <div id="popupAlytus" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">×</a>
+                <h2>Ragainė</h2>
+                <p> Čia veikė Martyno Jankaus spaustuvė, kuri slapta leido knygas lietuvių kalba. Iš čia knygnešiai,
+                    gavę
+                    spaudą, ją gabendavo ją į Lietuvą. Knygos buvo
+                    paslepiamos vežimuose, šienuose arba net įsiuvamos į drabužius.</p>
+            </div>
+        </div>
+
+
+        <a href="#popupVilnius" class="image-button vilnius">2</a>
+
+        <div id="popupVilnius" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">×</a>
+                <h2>Tauragė</h2>
+                <p>Tauragė buvo svarbus taškas knygnešių kelionėse, nes ši vieta buvo arti Rusijos imperijos sienos.
+                    Knygnešiai per Tauragę gabendavo knygas į Lietuvą, kirsdami griežtai kontroliuojamą sieną.</p>
+            </div>
+        </div>
+
+        <a href="#popupTaurage" class="image-button taurage">3</a>
+
+
+        <div id="popupTaurage" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">×</a>
+                <h2>Šiauliai</h2>
+                <p> Šiauliai buvo vienas pagrindinių knygnešių kelionės taškų. Iš Šiaulių knygos buvo gabendamos į
+                    Panevėžį, iš kurio vėliau į kitus miestus.
+                    Miestas taip pat buvo svarbus knygų paskirstymo centras, kur knygnešiai gaudavo ir platino
+                    knygas, dažnai pasikliaudami slaptomis saugyklomis ir vietiniais pagalbininkais.</p>
+            </div>
+        </div>
+
+
+        <a href="#popupSiauliai" class="image-button siauliai">4</a>
+
+        <div id="popupSiauliai" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">×</a>
+                <h2>Panevėžys</h2>
+                <p> Šiame mieste knygnešiai jas platino tiek pačiame mieste, tiek kaimuose.
+                    Panevėžyje veikė slaptos mokyklos ir kunigų organizacijos, kurios rūpinosi, kad knygos pasiektų savo
+                    tikslą.</p>
+            </div>
         </div>
     </div>
 </body>
+
+</html>

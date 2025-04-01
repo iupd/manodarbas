@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            background-color: #d3d3d3;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #f08080;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .nav-btn:hover {
+            background-color: #90ee90;
+            transform: scale(1.05);
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<head>
     <title>Knygnešiai</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -8,56 +58,105 @@
 <body style="background-color: #d3d3d3;">
     <header>
         <a href="index.html">
-            <img src="logo.jpg" title="Knygnešių pėdomis">
+            <img src="img/logo5.jpg" title="Knygnešių pėdomis">
         </a>
     </header>
     <hr>
     <nav>
         <table cellspacing="5" cellpadding="5">
             <tr>
-                <td><a href="index.html">Namai</a></td>
-                <td><a href="Laiko juosta.html">Laiko juosta</a></td>
-                <td><a href="Knygnešių kelionė.html">Knygnešių kelionė</a></td>
-                <td><a href="Knygnešiai.html">Knygnešiai</a></td>
-                <td><a href="Iššifruok.html">Iššifruok!</a></td>
-                <td><a href="Suzinok daugiau.html">Sužinok daugiau</a></td>
+                <td><a href="index.html" class="nav-btn">Namai</a></td>
+                <td><a href="Laiko juosta.html" class="nav-btn">Laiko juosta</a></td>
+                <td><a href="Knygnešių kelionė.html" class="nav-btn">Knygnešių kelionė</a></td>
+                <td><a href="Knygnešiai.html" class="nav-btn">Knygnešiai</a></td>
+                <td><a href="Iššifruok.html" class="nav-btn">Iššifruok!</a></td>
+                <td><a href="Suzinok daugiau.html" class="nav-btn">Sužinok daugiau</a></td>
             </tr>
         </table>
     </nav>
+
+    <style>
+        .nav-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #f08080;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .nav-btn:hover {
+            background-color: #90ee90;
+            transform: scale(1.05);
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            padding: 5px;
+        }
+    </style>
+
     <hr>
     <style>
         body {
-               font-family: Arial, sans-serif;
-               text-align: left;
-           }
-   </style>
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+    </style>
     <p>
-     Na, o dabar, kai jau žinote truputį daugiau apie knygnešių darbus, laikas susipažinti su žymiausiais knygnešiais! Ar atpažįstate kažką? Paspauskite ant nuotraukos ir perskaitykite trumpą aprašymą apie knygnešį!
+        Na, o dabar, kai jau žinote truputį daugiau apie knygnešių darbus, laikas susipažinti su žymiausiais
+        knygnešiais! Ar atpažįstate kažką? Paspauskite ant nuotraukos ir perskaitykite trumpą aprašymą apie knygnešį!
 
     </p>
 
-    
-        <table cellspacing="10">
-            <tr>
-                <td><div class="box"><a href="#popup1"><img src="img/valancius.jpg" width="200" height="250"></a></div></td>
-                <td><div class="box"><a href="#popup2"><img src="img/bite2.jpg" width="200" height="250"></a></div></td>
-                <td><div class="box"><a href="#popup3"><img src="img/pautienius.jpg" width="200" height="250"></a></div></td>
-                <td><div class="box"><a href="#popup7"><img src="img/begti2.jpg" width="200" height="250"></a></div></td>
-            </tr>
-            <tr>
-                <td><div class="box"><a href="#popup4"><img src="img/bielinis2.jpg" width="200" height="250"></a></div></td>
-                <td><div class="box"><a href="#popup5"><img src="img/kancleris2.jpg" width="200" height="250"></a></div></td>
-                <td><div class="box"><a href="#popup6"><img src="img/kazkas1.jpg" width="200" height="250"></a></div></td>
-                <td><div class="box"><a href="#popup8"><img src="img/jankus.jpg" width="200" height="250"></a></div></td>
-            </tr>
-        </table>
+
+    <table cellspacing="10">
+        <tr>
+            <td>
+                <div class="box"><a href="#popup1"><img src="img/valancius.jpg" width="200" height="250"></a></div>
+            </td>
+            <td>
+                <div class="box"><a href="#popup2"><img src="img/bite2.jpg" width="200" height="250"></a></div>
+            </td>
+            <td>
+                <div class="box"><a href="#popup3"><img src="img/pautienius.jpg" width="200" height="250"></a></div>
+            </td>
+            <td>
+                <div class="box"><a href="#popup7"><img src="img/begti2.jpg" width="200" height="250"></a></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="box"><a href="#popup4"><img src="img/bielinis2.jpg" width="200" height="250"></a></div>
+            </td>
+            <td>
+                <div class="box"><a href="#popup5"><img src="img/kancleris2.jpg" width="200" height="250"></a></div>
+            </td>
+            <td>
+                <div class="box"><a href="#popup6"><img src="img/kazkas1.jpg" width="200" height="250"></a></div>
+            </td>
+            <td>
+                <div class="box"><a href="#popup8"><img src="img/jankus.jpg" width="200" height="250"></a></div>
+            </td>
+        </tr>
+    </table>
 
     <div id="popup1" class="overlay">
         <div class="popup">
             <h2>Motiejus Valančius</h2>
             <a class="close" href="#">×</a>
             <div class="content">
-                Pirmosios knygnešių slaptos organizacijos kūrėjas (veikė 1867–1870 m.). Jis buvo vyskupas, kuris rūpinosi lietuviškos spaudos platinimu.
+                Motiejus Valančius buvo ne tik vyskupas, bet ir vienas svarbiausių žmonių, padėjusių išsaugoti lietuvių kalbą ir kultūrą. Jis gimė  1801 metais ir gyveno spaudos draudimo metu. Tačiau Valančius rado būdą, kaip pasipriešinti – slapta organizavo knygų gabenimą iš Prūsijos ir platino jas per knygnešius. Tai buvo labai pavojinga, bet, nepaisant to, Valančiaus dėka daugelis lietuvių išmoko skaityti ir rašyti gimtąja kalba.
+
+Be to, jis garsėjo savo kova su girtavimu. Tuo metu degtinė buvo labai pigus ir lengvai prieinamas gėrimas, todėl daugelis žmonių dažnai ją vartojo. Tai sukeldavo daug problemų – šeimos skurdo, žmonės neprižiūrėjo ūkių, kildavo daugiau muštynių ir nusikaltimų. Valančius skatino žmones atsisakyti alkoholio, organizavo blaivybės draugijas, o net kai kurie kaimai visiškai nustodavo gerti! Dėl to jo pastangos vadinamos tikra „blaivybės revoliucija“.
+
+Be viso to, Valančius rašė knygas apie Lietuvos istoriją ir paprastų žmonių gyvenimą. Jo kūriniuose galima sužinoti, kaip tuo metu gyveno valstiečiai, kokios buvo jų tradicijos ir kas jiems buvo svarbu. Jis norėjo, kad lietuviai didžiuotųsi savo kalba ir kultūra, todėl daug prisidėjo prie tautos susivienijimo. Jei ne jo darbai, gali būti, kad lietuvių kalba būtų dar labiau nukentėjusi arba net visai išnykusi. Valančius buvo žmogus, kuris nepabijojo kovoti už tai, kas jam atrodė teisinga.
+
             </div>
         </div>
     </div>
@@ -67,7 +166,12 @@
             <h2>Gabrielė Petkevičaitė-Bitė</h2>
             <a class="close" href="#">×</a>
             <div class="content">
-                 Aktyviai dalyvavo už vyrų ir moterų lygybę, stengėsi iškovoti moterims balsavimo teisę. Buvo įrengusi slaptą mokyklą savo bute. Rašė straipsnius „Varpui”
+                Gabrielė Petkevičaitė-Bitė buvo ne tik  rašytoja, mokytoja, visuomenininkė, kovotoja už žmonių teises, bet ir knygnešė. Ji gyveno 1861-1943 metais. Tuo metu moterys dar neturėjo daug teisių, o lietuvių kalba buvo draudžiama. Tačiau tai jos nesustabdė. 
+
+Gabrielė Petkevičaitė-Bitė rašė knygas ir straipsnius apie Lietuvos žmonių gyvenimą, aktyviai prisidėjo prie knygnešystės – slapta platino draudžiamas lietuviškas knygas ir skatino žmones mokytis gimtąja kalba. Ji ne tik pati skaitė ir dalino knygas, bet ir savo namuose organizavo slaptą mokyklą ir švietė žmones apie kalbos svarbą. Nepaisydama griežtų caro valdžios draudimų, Bitė bendradarbiavo su knygnešiais ir rūpinosi, kad lietuviška spauda pasiektų kuo daugiau žmonių.
+
+Be to, ji viena pirmųjų Lietuvoje pradėjo kalbėti apie tai, kad moterys turi teisę mokytis, balsuoti ir būti lygios vyrams – kas tais laikais buvo neįprastas dalykas.
+
             </div>
         </div>
     </div>
@@ -77,7 +181,7 @@
             <h2>Jonas Pautienius</h2>
             <a class="close" href="#">×</a>
             <div class="content">
-            Knygnešys, kuris ne tik gabeno ir platino spaudą, bet ir pats knygas įrišinėdavo; ištikus pavojui pabėgo į Paryžių, iš kur rėmė lietuviškos spaudos platinimą.
+                Jonas Pautienius gimė 1848 m. Biržų rajone, išsilavinusioje šeimoje, kurioje vertinta lietuvių kalba ir kultūra. Nuo pat jaunystės jis buvo patriotiškas, todėl, išmokęs skaityti ir rašyti, pradėjo domėtis lietuviškais leidiniais. Spaudos draudimo metais J.Pautienius ne tik pats gabeno knygas, bet ir aktyviai organizavo slaptą jų platinimo tinklą. Jis slėpdavo knygas po drabužiais, vežimuose tarp šieno, arba įrengdavo slėptuves, kad jų nebūtų galima rasti. 1894 m. J.Pautienius buvo suimtas carinės valdžios už knygų gabenimą ir nuteistas. Jis buvo ištremtas į Sibirą, kur praleido ketverius metus ir gyveno sunkiausiomis sąlygomis. 1898 m. jis sugrįžo į Lietuvą, tačiau dėl sveikatos problemų, sukeltų sunkių tremties metų, jam buvo sunku tęsti aktyvią veiklą.
 
 
             </div>
@@ -89,7 +193,26 @@
             <h2>Jurgis Bielinis</h2>
             <a class="close" href="#">×</a>
             <div class="content">
-            Platino lietuvišką spaudą, bendradarbiavo su Motiejumi, Valančiumi. Įkūrė pirmąją knygnešių organizaciją, prisidėjo prie „Aušros”, „Varpo” ir kt. Kūrimo, rašė knygas.
+                Jurgis Bielinis (1846–1918) buvo vienas drąsiausių, atkakliausių ir garsiausių knygnešių Lietuvoje,
+                gavęs „knygnešių karaliaus“ vardą. Jis visą savo gyvenimą skyrė kovai už lietuvišką žodį, kai carinė
+                Rusija buvo uždraudusi spaudą lietuvių kalba.
+
+
+                Jurgis Bielinis ne tik pats slapta per sieną gabendavo draudžiamą spaudą, bet ir sumaniai organizuodavo
+                visą knygnešių tinklą. Kartu su suburtais žmonėmis jie stengėsi ir rūpinosi, kad lietuviškos knygos
+                pasiektų kiekvieną, net ir tolimiausią Lietuvos kampelį. Bielinis buvo bebaimis, bet ir labai atsargus
+                bei gudrus – jis nuolat keisdavo maršrutus, persirengdavo, naudojo slapyvardžius, tokius kaip Jonas
+                Anykštėnas, J. Barzdyla, J. Niuronis. ir kt. Valdžia ilgai bandė jį sugauti, tačiau jam pavykdavo
+                pasprukti iš valdžios rankų ir likti laisvam daugelį metų. Jo sumanumas ir atsidavimas lietuvių kalbai
+                padėjo išsaugoti lietuvišką spaudą.
+
+                Po spaudos draudimo panaikinimo 1904 m. Bielinis nesustojo – jis ir toliau aktyviai dirbo, ragino žmones
+                kovoti už savo teises, prisidėjo prie lietuviškų laikraščių leidybos ir skleidė tautinę savimonę. Jis
+                rašė straipsnius, kuriuose aiškino, kodėl Lietuvai yra būtina nepriklausomybė, ir drąsino žmones siekti
+                laisvės. Jis mirė 1918 m., kai Lietuva jau artėjo prie pagrindinio tikslo – nepriklausomybės paskelbimo.
+                Jo darbai paliko gilų pėdsaką Lietuvos istorijoje – be tokių žmonių kaip jis lietuvių kalba ir kultūra
+                galėjo būti seniai sunaikinta.
+
             </div>
         </div>
     </div>
@@ -99,7 +222,15 @@
             <h2>Juozas Kancleris</h2>
             <a class="close" href="#">×</a>
             <div class="content">
-                Buvo vadinamas Suvalkijos knygnešių karaliumi. Gabeno spaudą per Suvalkiją, aprūpindamas lietuviškais leidiniais tiek Didžiąją Lietuvą, tiek kitas Rusijos imperijos vietas.
+                Juozas Kancleris (1866–1931) buvo narsus knygnešys, kuris rizikavo savo laisve, kad lietuviškos knygos
+                pasiektų žmones. Per savo gyvenimą jis patyrė daug pavojų. Knygas jis nešė slaptais keliais, turėjo
+                slėptuves ir buvo nuolatos persekiojamas caro žandarų. Tačiau jis nepasidavė ir atkakliai kovėsi už
+                lietuvišką spaudą. J.Kancleris ne tik pats slapta gabeno knygas, bet ir organizavo jų platinimą. Jis
+                gudriai slėpė leidinius po drabužiais, vežimuose ar net bažnyčiose, kad išvengtų caro valdžios
+                represijų. 1899 m. buvo suimtas, tačiau nei tardymai, nei įkalinimas jo nepalaužė. Paleistas jis tęsė
+                knygnešystę, nes suprato, kokia svarbi lietuviška spauda. Kai 1904 m. spaudos draudimas buvo
+                panaikintas, J.Kancleris nenustojo dirbęs lietuvių švietimui ir kultūrai. Jo atkaklumas padėjo išsaugoti
+                lietuvišką žodį, o jo vardas iki šiol minimas kaip vieno garsiausių knygnešių.
             </div>
         </div>
     </div>
@@ -109,7 +240,7 @@
             <h2>Felicija Bortkevičienė</h2>
             <a class="close" href="#">×</a>
             <div class="content">
-                 Buvo knygnešė, visuomenės veikėja ir politikė. Ji aktyviai platino draudžiamą lietuvišką spaudą, rėmė knygnešius ir prisidėjo prie tautinio atgimimo. Dalyvavo politinėje veikloje, rėmė nukentėjusius nuo persekiojimų. Sovietų okupacijos metais buvo suimta ir mirė lageryje.
+                Felicija Bortkevičienė buvo viena iš ryžtingiausių lietuvių knygnešių ir spaudos rėmėjų lietuviškos spaudos draudimo metu. Felicija Bortkevičienė aktyviai prisidėjo prie knygnešių veiklos. Ji ne tik pati platino draudžiamą spaudą, bet ir rėmė knygnešius finansiškai, organizavo leidinių gabenimą ir slėpimą. F. Bortkevičienė turėjo daug ryšių su Lietuvos intelektualais ir spaudos leidėjais ir tai jai padėjo sklandžiai suorganizuoti šią veiklą. Ji bendradarbiavo su laikraščių „Varpas“ ir „Ūkininkas“ leidėjais,  užtikrindama, kad lietuviški leidiniai pasiektų kuo platesnę auditoriją. Nepaisant visų grėsmių dėl knygnešiams, Felicija Bortkevičienė atkakliai tęsė šią veiklą iki to laiko,  kai spaudos draudimas buvo panaikintas. Vėliau ji liko ištikima lietuviškos spaudos rėmėja – dalyvavo leidyboje, finansavo naujus leidinius ir skatino jų platinimą.
             </div>
         </div>
     </div>
@@ -119,7 +250,7 @@
             <h2>Greitakojė Magdalena</h2>
             <a class="close" href="#">×</a>
             <div class="content">
-            Vadinama knygnešių karalienė. Knygas pradėjo gabenti sulaukus 21-mų metų. Neturėjo jokio išsilavinimo. Gabendama knygas slėpdavo jas įvairioze vietose, jeigu ją pagaudavo, stengdavodi sudeginti arba sunaikinti knygas, kad jos nepatektų į rusų rankas. Buvo pagauta ir kankinta, bet neišdavė savų.
+                Magdalena Bankaitė iš Mosėdžio vadinama knygnešių karaliene. Nors jokios mokyklos nebuvo baigusi, didžiąsias raides išmoko skaityti dar vaikystėje, o mažąsias – tik būdama 18-os. Rašyti pramoko jau gabendama knygas. Gabenti draudžiamą spaudą pradėjo būdama 21-erių. Buvo stipri ir greita – galėjo lengvai užsimesti maišą rugių ar nubėgti keliasdešimt kilometrų. Knygas iš Prūsijos veždavo beveik kas savaitę, kartais pėsčiomis, kartais vežimu. Ne kartą teko slapstytis nuo žandarų ir šnipų. Kartą, perėjusi sieną su knygomis, buvo pastebėta sargybinių ir apšaudyta, bet sugebėjo išsigelbėti šokdama į šulinį. Knygas slėpė įvairiose vietose: krūmuose, šiauduose, palėpėse, po akmenimis, net Mosėdžio kapinėse užkastoje statinėje. Kartą, kad jos nepatektų į rusų rankas, teko net sudeginti. Magdalena buvo nekartą sugauta, bet niekada neišdavė savų. Vėliau buvo ištremta, bet grįžusi toliau platino knygas. Magdalenos veikla truko net 18 metų 
             </div>
         </div>
     </div>
@@ -129,10 +260,11 @@
             <h2>Martynas Jankus</h2>
             <a class="close" href="#">×</a>
             <div class="content">
-            Vienas pirmųjų pasaulietinės lietuvių spaudos organizatorių, dirbęs „Aušros“ laikraščio leidyboje ir lietuviškos spaudos platinimo organizacijoje.
+                Martynas Jankus (1858–1946) buvo atkaklus lietuvių knygnešys, iškilus spaudos darbuotojas ir tautinio atgimimo veikėjas. Gimęs Mažojoje Lietuvoje, Bitėnuose, jis visą savo gyvenimą skyrė gimtosios kalbos puoselėjimui ir lietuviškos spaudos platinimui. Carinei Rusijai uždraudus lietuvišką spaudą, Jankus pradėjo leisti knygas ir laikraščius. Vėliau jo leidiniai buvo gabenami knygnešių rankomis per visą Lietuvą. Jankus dirbo kartu su tokiais knygnešiais kaip Jurgis Bielinis. M. Jankus leido drąsius, patriotiškus laikraščius, tokius kaip „Aušra“, „Varpas“. Šiandien jis dažnai vadinamas Mažosios Lietuvos patriarchu, nes jo nepaprastas atsidavimas lietuvybei paliko gilų pėdsaką tautos istorijoje.
+                Be spaudos leidybos ir knygnešystės, Martynas Jankus aktyviai dalyvavo ir politinėje veikloje – jis buvo vienas iš Tilžės akto signatarų. Tai aktas, kuris reikalavo prijungti Mažąją Lietuvą prie Lietuvos valstybės. Tai buvo svarbus žingsnis ties lietuvių žemių suvienijimo. Pats Jankus dėl savo veiklos ne kartą patyrė persekiojimus.
+                Ragainėje Jankus įkūrė savo spaustuvę, kuri tapo svarbiu lietuviškos spaudos centru. Joje buvo spausdinami laikraščiai, knygos ir kiti leidiniai, skatinantys lietuvių tautinį sąmoningumą. Vėliau spaustuvės darbas persikėlė į kitus miestus, bet jos darbo tikslas nepasikeitė.
+                
             </div>
         </div>
     </div>
 </body>
-
-
